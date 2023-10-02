@@ -1,0 +1,20 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Default preset for use with Renovate's repos",
+  "assignees": ["wktk"],
+  "reviewers": ["wktk"],
+  "extends": [
+    "config:base",
+    ":timezone(Asia/Tokyo)"
+  ],
+  "schedule": [
+    "after 7am",
+    "before 1pm"
+  ],
+  "packageRules": [
+    {
+      "matchDepTypes": ["action"],
+      "pinDigests": false
+    }
+  ]
+}
